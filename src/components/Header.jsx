@@ -5,15 +5,12 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    // Add main-header class
     <header className="main-header">
       <div className="container header-content-wrapper">
-        {/* Logo/Clinic Name */}
         <Link to="/" className="header-logo">
           MedCare+
         </Link>
 
-        {/* Navigation Links (Desktop) */}
         <nav className="header-nav">
           <Link to="/" className="nav-link">
             Home
@@ -30,12 +27,10 @@ function Header() {
           <button className="btn btn-secondary-header">Book Now</button>
         </nav>
 
-        {/* Mobile Menu Button */}
         <button
           className="mobile-menu-button"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {/* SVG for menu icon */}
           <svg
             className="w-8 h-8"
             fill="none"
@@ -53,7 +48,6 @@ function Header() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="mobile-menu-dropdown">
           <div className="mobile-menu-list">

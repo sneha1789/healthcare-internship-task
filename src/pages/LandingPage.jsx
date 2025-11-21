@@ -68,7 +68,6 @@ function LandingPage() {
       <Header />
 
       <main className="main-content">
-        {/* 1. Hero Section (Mandatory) */}
         <section className="hero-section">
           <div className="container">
             <h1 className="hero-title">
@@ -88,7 +87,6 @@ function LandingPage() {
           </div>
         </section>
 
-        {/* 2. Services Section (Mandatory) */}
         <section id="services" className="services-section">
           <div className="container">
             <h2 className="section-title">Our Core Services</h2>
@@ -103,7 +101,6 @@ function LandingPage() {
           </div>
         </section>
 
-        {/* 3. Doctors Preview Section (Mandatory) */}
         <section className="doctors-preview-section">
           <div className="container">
             <h2 className="section-title">Meet Our Leading Team</h2>
@@ -124,7 +121,6 @@ function LandingPage() {
         </section>
       </main>
 
-      {/* 4. Footer with Contact Information (Mandatory) */}
       <Footer />
     </div>
   );
