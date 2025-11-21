@@ -4,6 +4,7 @@ function Footer() {
   return (
     <footer id="contact" className="main-footer">
       <div className="container footer-grid-wrapper">
+        {/* 1. Clinic Branding */}
         <div className="footer-col branding-col">
           <h4 className="footer-title footer-logo-text">MedCare+</h4>
           <p className="footer-text">
@@ -12,6 +13,7 @@ function Footer() {
           </p>
         </div>
 
+        {/* 2. Quick Links */}
         <div className="footer-col">
           <h4 className="footer-title">Quick Links</h4>
           <ul className="footer-list">
@@ -33,6 +35,7 @@ function Footer() {
           </ul>
         </div>
 
+        {/* 3. Contact Information (MANDATORY) */}
         <div className="footer-col contact-info-col">
           <h4 className="footer-title">Get In Touch</h4>
           <p className="footer-text">
@@ -42,6 +45,7 @@ function Footer() {
           <p className="footer-text">📧 contact@medcareplus.com</p>
         </div>
 
+        {/* 4. Business Hours */}
         <div className="footer-col">
           <h4 className="footer-title">Working Hours</h4>
           <p className="footer-text">Mon - Fri: 8:00 AM - 7:00 PM</p>

@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
-import DoctorsPage from './pages/DoctorsPage';
+import DoctorsPage from './pages/DoctorsPage'; // Replace with your chosen page if different
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/doctors" element={<DoctorsPage />} />
+          {/* Add more routes if necessary */}
         </Routes>
       </div>
     </Router>

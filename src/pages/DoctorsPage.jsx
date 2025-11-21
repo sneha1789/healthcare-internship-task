@@ -10,6 +10,7 @@ import kenjiSatoImage from '../assets/kenji-sato.jpg';
 import sarahBellImage from '../assets/sarah-bell.png';
 import davidChenImage from '../assets/david-chen.jpg';
 
+// EXTENDED DUMMY DATA (You should replace imageUrl: null with actual paths to images)
 const allDoctorsData = [
   {
     id: 1,
@@ -67,6 +68,7 @@ const specialties = [
 function DoctorsPage() {
   const [filter, setFilter] = useState('All');
 
+  // Filter logic
   const filteredDoctors = allDoctorsData.filter(
     (doctor) => filter === 'All' || doctor.specialty === filter,
   );
@@ -77,16 +79,19 @@ function DoctorsPage() {
 
       <main className="main-content doctors-page-content">
         <div className="container">
+          {/* Headings and Subtitle */}
           <h1 className="doctors-page-title">Our Clinical Experts</h1>
           <p className="doctors-page-subtitle">
             Filter by Specialty to find the right doctor for you.
           </p>
 
+          {/* Filter Bar (Demonstrates Basic Interactivity) */}
           <div className="filter-bar">
             {specialties.map((s) => (
               <button
                 key={s}
                 onClick={() => setFilter(s)}
+                // Apply active/inactive button styles
                 className={
                   filter === s ? 'filter-btn filter-btn-active' : 'filter-btn'
                 }
@@ -96,6 +101,7 @@ function DoctorsPage() {
             ))}
           </div>
 
+          {/* Doctor List Grid */}
           <div className="doctors-grid">
             {filteredDoctors.length > 0 ? (
               filteredDoctors.map((doctor) => (

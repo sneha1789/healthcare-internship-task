@@ -6,6 +6,7 @@ import DoctorCard from '../components/DoctorCard';
 import janeSmithImage from '../assets/jane-smith.jpg';
 import alexLeeImage from '../assets/alex-lee.jpg';
 import miaGuptaImage from '../assets/mia-gupta.jpg';
+
 const servicesData = [
   {
     id: 1,
@@ -13,15 +14,6 @@ const servicesData = [
     description:
       'Comprehensive annual physicals and preventive medicine to keep you healthy year-round.',
     icon: '🩺',
-    duration: '30-60 min',
-    price: 'From $150',
-    features: [
-      'Annual physical examination',
-      'Preventive health screening',
-      'Chronic disease management',
-      'Vaccinations & immunizations',
-      'Health risk assessments',
-    ],
   },
   {
     id: 2,
@@ -29,15 +21,6 @@ const servicesData = [
     description:
       'Specialized diagnosis and treatment for all heart and vascular conditions by top specialists.',
     icon: '❤️',
-    duration: '45-90 min',
-    price: 'Consultation',
-    features: [
-      'Echocardiograms',
-      'Stress testing',
-      'Cardiac catheterization',
-      'Arrhythmia treatment',
-      'Heart disease prevention',
-    ],
   },
   {
     id: 3,
@@ -45,15 +28,6 @@ const servicesData = [
     description:
       'Caring for infants, children, and teens with gentle and expert hands in a friendly environment.',
     icon: '👶',
-    duration: '20-40 min',
-    price: 'From $120',
-    features: [
-      'Well-child visits',
-      'Developmental screenings',
-      'Vaccination schedules',
-      'Sports physicals',
-      '24/7 pediatric advice',
-    ],
   },
   {
     id: 4,
@@ -61,17 +35,9 @@ const servicesData = [
     description:
       'Expert care for skin, hair, and nail conditions, including cosmetic and medical treatments.',
     icon: '✨',
-    duration: '15-30 min',
-    price: 'From $200',
-    features: [
-      'Skin cancer screening',
-      'Acne treatment plans',
-      'Cosmetic procedures',
-      'Psoriasis management',
-      'Mohs surgery',
-    ],
   },
 ];
+
 const doctorsPreviewData = [
   {
     id: 1,
@@ -102,6 +68,7 @@ function LandingPage() {
       <Header />
 
       <main className="main-content">
+        {/* 1. Hero Section (Mandatory) */}
         <section className="hero-section">
           <div className="container">
             <h1 className="hero-title">
@@ -121,6 +88,7 @@ function LandingPage() {
           </div>
         </section>
 
+        {/* 2. Services Section (Mandatory) */}
         <section id="services" className="services-section">
           <div className="container">
             <h2 className="section-title">Our Core Services</h2>
@@ -135,6 +103,7 @@ function LandingPage() {
           </div>
         </section>
 
+        {/* 3. Doctors Preview Section (Mandatory) */}
         <section className="doctors-preview-section">
           <div className="container">
             <h2 className="section-title">Meet Our Leading Team</h2>
@@ -155,6 +124,7 @@ function LandingPage() {
         </section>
       </main>
 
+      {/* 4. Footer with Contact Information (Mandatory) */}
       <Footer />
     </div>
   );
